@@ -28,15 +28,12 @@ exports['dcl-label'] = {
         done();
     },
 
-    'your test name': function(test) {
+    'basic': function(test) {
         test.expect(1);
 
-        //Insert test here
-
-        //For example:
         var w = new Widget();
         w.setCaption('hello');
-        test.equal(w.stringify(), '<div>hello</div>');
+        test.equal(w.stringify(), '<span class="label label-default">hello</span>');
 
         test.done();
     }
